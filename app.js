@@ -20,6 +20,10 @@ app.use('/api/shipment', shipmentRoutes);
 
 
 
-app.listen(PORT, () => {
-  console.log(`Server is listening at http://localhost:${PORT}`);
+app.listen(PORT, function () {
+  console.log("App running on Port: " + PORT);
 });
+
+// app.listen(PORT, () => {
+//   console.log(`Server is listening at http://localhost:${PORT}`);
+// });

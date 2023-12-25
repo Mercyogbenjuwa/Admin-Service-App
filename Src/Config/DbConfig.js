@@ -31,7 +31,7 @@ const secretKey = generateRandomString(32);
 
 
 
-const expiresIn = '60m';  
+const expiresIn = '1d';  
 module.exports = {
   jwt: {
     secretKey: secretKey,
