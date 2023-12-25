@@ -5,8 +5,6 @@ require('dotenv').config();
 /**===================================== Database Connection ===================================== **/
 const mongoURL = process.env.MONGO_URL;
 mongoose.connect(mongoURL, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
 })
 .then(() => {
   console.log(`MongoDB Connected: ${mongoose.connection.host}`);
